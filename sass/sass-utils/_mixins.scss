@@ -1,0 +1,82 @@
+@media (min-width: 992px) {
+    nav {
+        background: $primaryWhite !important;
+    }
+    .header_up {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 10px 0 !important;
+        .burger {
+            display: none;
+        }
+
+        .header_right {
+            .icons {
+                display: flex;
+                align-items: center;
+                padding: 0;
+                .whatsapp {
+                    display: flex;
+                }
+
+                .phoneNumber {
+                    display: block;
+                    color: $primaryBlack;
+                }
+            }
+        }
+    }
+
+    .navbar-collapse {
+        display: block !important;
+        background: $green !important;
+        ul {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 10px 0 !important;
+            display: flex !important;
+            justify-content: space-between;
+            a {
+                color: $primaryWhite !important;
+            }
+        }
+    }
+
+    .card {
+        width: 18rem !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header_up {
+        max-width: 1140px;
+    }
+    .navbar-collapse {
+        ul {
+            max-width: 1140px;
+        }
+    }
+    .card {
+        width: 18.4rem !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .header_up {
+        max-width: 1320px;
+
+        .logo {
+            width: 70px;
+        }
+    }
+    .navbar-collapse {
+        ul {
+            max-width: 1320px;
+        }
+    }
+
+    h2 {
+        font-weight: 500 !important;
+        // font-size: 3rem !important;
+    }
+}

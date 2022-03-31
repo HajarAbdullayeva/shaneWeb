@@ -1,0 +1,121 @@
+body {
+    &.nonscroll {
+        overflow: hidden;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #00000048;
+            z-index: 99;
+        }
+    }
+}
+
+.header_down {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    background: $primaryWhite;
+    transition: all 0.4s;
+    left: -457px;
+
+    .close-menu {
+        padding: 0.75rem;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .logo {
+            width: 54px;
+        }
+
+        .close-burger {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+}
+
+.header_down.active {
+    left: 0;
+    width: 100%;
+}
+
+#border {
+    height: 2px;
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid $primaryBlack;
+    opacity: 0.1;
+}
+
+// .submenu {
+// display: flex;
+// justify-content: space-evenly;
+// margin-left:
+// }
+
+.navbar-collapse {
+    display: none;
+}
+
+.burger-container {
+    ul {
+        margin: 40px 0 16px 16px;
+    }
+
+    li {
+        margin-bottom: 28px;
+    }
+}
+
+.icons {
+    padding: 40px 26px 16px 16px;
+    text-align: center;
+
+    .whatsapp {
+        display: inline-block;
+    }
+    a {
+        margin-left: 1.5rem;
+    }
+
+    .phoneNumber {
+        display: none;
+    }
+
+    #instagram :hover {
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 50px;
+    }
+
+    #youtube:hover {
+        color: red;
+        font-size: 50px;
+    }
+
+    #telegram:hover {
+        color: #32aade;
+        font-size: 50px;
+    }
+
+    #linkedin:hover {
+        color: #0a66c2;
+        font-size: 50px;
+    }
+
+    #whatsapp:hover {
+        color: #54d372;
+        font-size: 50px;
+    }
+}

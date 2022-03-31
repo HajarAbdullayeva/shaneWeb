@@ -1,0 +1,12 @@
+body {
+  font-family: $fontFam;
+  font-size: 16px;
+  color: $primaryBlack;
+
+  a {
+    // color: #333333;
+    color: $primaryBlack;
+    list-style: none;
+    text-decoration: none;
+  }
+}

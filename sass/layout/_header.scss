@@ -1,0 +1,40 @@
+.logo {
+  img {
+    width: 54px;
+  }
+}
+
+nav {
+  background: $background;
+}
+
+.header_up {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .icons {
+    display: none;
+  }
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.burger {
+  height: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  background: $primaryWhite;
+  height: 1px;
+  width: 25px;
+  margin-top: 8px;
+}
